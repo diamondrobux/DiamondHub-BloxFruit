@@ -1,0 +1,15 @@
+wait(3.0)
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Done Actived" ;
+    Text = "Thanks For Useing DiamondHub https://discord.gg/PMCZs7ZMvR"; -- DiamondRobux TEAM --
+    Duration = 5;
+})
+ 
+ 
+ 
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("DiamondHub | Blox Fruits", "BloodTheme")
+local Tab = Window:NewTab("Blox Fruits")
+local Section = Tab:NewSection("BLOX FRUITS")
+Section:NewButton("TEST11", "TEST", function()
+    print("Starting")
