@@ -11,5 +11,16 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHept
 local Window = Library.CreateLib("DiamondHub | Blox Fruits", "BloodTheme")
 local Tab = Window:NewTab("Blox Fruits")
 local Section = Tab:NewSection("BLOX FRUITS")
-Section:NewButton("TEST11", "TEST", function()
-    print("Starting")
+Section:NewToggle("ToggleText", "ToggleInfo", function(state)
+    if state then
+        getgenv().AutoClick = true
+        if getgenv().AutoClick == true then
+            repeat wait()
+            game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.ClickService.Click:FireServer(1)
+    until getgen().AutoClick = false
+end
+    else
+        getgenv().AutoClick = false
+
+    end
+end)
