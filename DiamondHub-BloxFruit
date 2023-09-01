@@ -7,7 +7,7 @@ local auto = Window:NewTab("auto click")
 local Section = auto:NewSection("BLOX FRUITS")
 
 
-Section:NewToggle("ToggleText", "ToggleInfo", function(state)
+Section:NewToggle("auto click", "for click", function(state)
     if state then
         getgenv().AutoClick = true
         if getgenv().AutoClick == true then
